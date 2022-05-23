@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=B612+Mono&family=DM+Serif+Display:ital@0;1&display=swap");
-@import "_variables";
-@import "_mixins";
+@import "_mixins2";
 
-a {
-  margin-bottom: 10px;
-  &:nth-child(odd) {
-    @include link("odd");
+h1 {
+  color: red;
+  @include responsive("iphone") {
+    color: yellow;
   }
-  &:nth-child(even) {
-    @include link("even");
+  @include responsive("iphone-l") {
+    font-size: 60px;
+  }
+  @include responsive("tablet") {
+    color: green;
   }
 }
