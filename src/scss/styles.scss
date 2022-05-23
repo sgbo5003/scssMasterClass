@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=B612+Mono&family=DM+Serif+Display:ital@0;1&display=swap");
+@import "_variables";
+
+* {
+  box-sizing: border-box;
+}
+ 
+body {
+  font-family: "DM Serif Display", monospace;
+}
+
+h2 {
+  color: $bg;
+}
+
+.box {
+  margin-top: 20px;
+  &:hover {
+    background-color: green;
+  }
+  h2 {
+    color: blue;
+    &:hover {
+      color: red;
+    }
+  }
+  button {
+    color: red;
+  }
+}
