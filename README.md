@@ -36,5 +36,39 @@
 
 - 부모 내 자식 요소들의 css를 굳이 class를 주지 않아도 된다.
 
+### #3.2 Mixins
+
+> mixins
+> 
+- scss functionality를 재사용할 수 있도록 해준다.
+
+```scss
+/* _mixins.scss */
+@mixin link($word) {
+  text-decoration: none;
+  display: block;
+  @if $word == "odd" {
+    color: blue;
+  } @else {
+    color: red;
+  }
+}
+
+/* styles.scss */
+@import "_variables";
+@import "_mixins";
+
+a {
+  margin-bottom: 10px;
+  &:nth-child(odd) {
+    @include link("odd");
+  }
+  &:nth-child(even) {
+    @include link("even");
+  }
+}
+```
+
+
 
 
