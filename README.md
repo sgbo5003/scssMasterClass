@@ -69,6 +69,20 @@ a {
 }
 ```
 
+## #4 PROJECTS
+-------------
+
+### #4.1 Best Horror Scenes Coding ~ #4.2 Best Horror Scenes Comment
+
+
+> 따라할 페이지
+> 
+- [https://besthorrorscenes.com/](https://besthorrorscenes.com/) 를 참고하여 비슷하게 만들어보기
+
+> 코드
+> 
+- [https://github.com/sgbo5003/scssMasterClass/commit/8a33816e0cc42eb8a663702b98a9c71ecc3fb525](https://github.com/sgbo5003/scssMasterClass/commit/8a33816e0cc42eb8a663702b98a9c71ecc3fb525) 참고
+
 
 
 
