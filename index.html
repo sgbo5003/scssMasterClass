@@ -6,8 +6,201 @@
     <link rel="stylesheet" href="dist/css/reset.css" />
     <link rel="stylesheet" href="dist/css/styles.css" />
     <title>(S)CSS Masterclass</title>
-  </head>
+    <script src="https://kit.fontawesome.com/a19f20457c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.hide1').animate({opacity: '1'}, {duration: 1500, easing: "linear"});
+        /* 1 */
+        $(window).scroll(function(){
+          let winH = window.innerHeight; // 937
+          let posFromTop = document.querySelector('.hide2').getBoundingClientRect().top;
+          let posFromTop2 = document.querySelector('.hide3').getBoundingClientRect().top;
+          let posFromTop3 = document.querySelector('.hide4').getBoundingClientRect().top;
+          let posFromTop4 = document.querySelector('.hide6').getBoundingClientRect().top;
+          let posFromTop5 = document.querySelector('.hide8').getBoundingClientRect().top;
+          let scrollY = window.scrollY;
+          if ((winH > posFromTop) && (posFromTop > 0)) {
+            $('.hide2').animate({opacity: '1'}, {duration: 1500, easing: "linear"});
+            console.log("11");
+            console.log(posFromTop);
+          } else if ((winH > posFromTop2) && (posFromTop2 > 0)) {
+            $('.hide3').animate({opacity: '1'}, {duration: 1500, easing: "linear"});
+          } else if ((winH > posFromTop3) && (posFromTop3 > 0)) {
+            $('.hide4').animate({opacity: '1'}, {duration: 1500, easing: "linear"});
+            $('.hide5').animate({opacity: '1'}, {duration: 1500, easing: "linear"});
+          } else if ((winH > posFromTop4) && (posFromTop4 > 0)) {
+            $('.hide6').animate({opacity: '1'}, {duration: 1500, easing: "linear"});
+            $('.hide7').animate({opacity: '1'}, {duration: 1500, easing: "linear"});
+          } else if ((winH > posFromTop5) && (posFromTop5 > 0)) {
+            $('.hide8').animate({opacity: '1'}, {duration: 1500, easing: "linear"});
+            $('.hide9').animate({opacity: '1'}, {duration: 1500, easing: "linear"});
+          }
+        });
+      });
+    </script>
+  </head> 
   <body>
-    <h1>Hello</h1>
+    <header>
+      <nav>
+        <ul>
+          <li>NAIL STUDIO</li>
+          <li>SHOP PRODUCT</li>
+        </ul>
+        <ul>
+          <li>JOURNAL</li>4  
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="wrapper">
+        <section class="description_wrap hide1">
+          <img src="lv_desc2.jpg" alt="" />
+          <div class="description">
+            <div class="description_section">
+              <div class="word">
+                <p>
+                  Louis Vuitton is a French high-end luxury brand founded in 1854.
+                </p>
+              </div>                 
+              <div class="link">
+                <a>BROWSE NOW</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="description_wrap hide2">
+          <img src="lv_desc1.jpg" alt="" />
+          <div class="description">
+            <div class="description_section">
+              <div class="word">
+                <p>
+                  Discover your new favorite color combos for spring. Nothing screams warm weather like experimenting with color theory.
+                </p>
+              </div>
+              <div class="link">
+                <a>BROWSE NOW</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="shop_wrap hide3">
+          <div class="shop_title1">THE SHOP</div>
+          <div class="shop_title2">Our popular new products</div>
+          <div class="shop_list">
+            <div class="shop_list_box">
+              <img src="lv_clock.jpg" alt="" />
+              <div class="proudct_title">
+                Louis Vuittion bag
+              </div>
+              <div class="proudct_price">$5000.00</div>
+              <a>ADD TO CART</a>
+            </div>
+            <div class="shop_list_box">
+              <img src="lv_shoes.jpg" alt="" />
+              <div class="proudct_title">
+                Louis Vuittion shoes
+              </div>
+              <div class="proudct_price">$1500.00</div>
+              <a>ADD TO CART</a>
+            </div>
+            <div class="shop_list_box">
+              <img src="lv_bag.jpg" alt="" />
+              <div class="proudct_title">
+                Louis Vuittion bag
+              </div>                                                                                                                                                                                                                                           
+              <div class="proudct_price">$2000.00</div>
+              <a>ADD TO CART</a>
+            </div>
+          </div>
+        </section>
+        <section class="story_wrap">
+          <img src="lv_desc1.jpg" alt="" class="hide4" />
+          <div class="description hide5">
+            <div class="description_section">
+              <div class="date">
+                May 4, 2022
+              </div>
+              <div class="word">
+                <p>Better Together: Shirin von Wulffen & Her Daughter Cecilia</p>
+              </div>
+              <div class="link">
+                <a>READ STORY</a>
+              </div>
+            </div>
+          </div>
+          <div class="description hide6">
+            <div class="description_section">
+              <div class="date">
+                May 4, 2022
+              </div>
+              <div class="word">
+                <p>Better Together: Shirin von Wulffen & Her Daughter Cecilia</p>
+              </div>
+              <div class="link">
+                <a>READ STORY</a>
+              </div>
+            </div>
+          </div>
+          <img src="lv_desc1.jpg" alt="" class="hide7"/>
+          <img src="lv_desc1.jpg" alt="" class="hide8"/>
+          <div class="description hide9">
+            <div class="description_section">
+              <div class="date">
+                May 4, 2022
+              </div>
+              <div class="word">
+                <p>Better Together: Shirin von Wulffen & Her Daughter Cecilia</p>
+              </div>
+              <div class="link">
+                <a>READ STORY</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="img_wrap hide">
+          <img src="lv_img1.jpg" alt="" />
+          <img src="lv_img2.jpg" alt="" />
+          <img src="lv_img3.jpg" alt="" />
+          <img src="lv_img4.jpg" alt="" />
+          <img src="lv_img5.jpg" alt="" />
+          <img src="lv_img6.jpg" alt="" />
+          <img src="lv_img7.jpg" alt="" />
+          <img src="lv_img8.jpg" alt="" />
+        </section>
+        <section class="follow_wrap">
+          <p>Follow us at <a href="https://kr.louisvuitton.com/kor-kr/homepage">@LouisVuitton</a></p>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="footer_column">
+        <div class="column_title">SUPPORT</div>
+        <ul>
+          <li>F.A.Q</li>
+          <li>PRIVACY POLICY</li>
+          <li>TERMS AND CONDITIONS</li>
+          <li>ACCESSIBILITY</li>
+        </ul>
+      </div>
+      <div class="footer_column">
+        <div class="column_title">FOLLOW US</div>
+        <ul>
+          <li>INSTAGRAM</li>
+          <li>PINTEREST</li>
+          <li>FACEBOOK</li>
+          <li>NEWSLETTER</li>
+        </ul>
+      </div>
+      <div class="footer_column">
+        <div class="column_title">LOUISVUITTON</div>
+        <ul>
+          <li>OUR STUDIO</li>
+          <li>CAREERS</li>
+          <li>PRESS</li>
+          <li>CONTACT US</li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
