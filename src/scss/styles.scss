@@ -55,6 +55,7 @@ main {
       @media screen and (max-width: 768px) {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: 80vh 80vh;
+        padding: 0;
       }
       img {
         width: 100%;
@@ -101,36 +102,29 @@ main {
         }
       }
     }
-    .hide1 {
-      opacity: 0;
-    }
-    .hide2 {
-      opacity: 0;
-    }
-    .hide3 {
-      opacity: 0;
-    }
-    .hide4 {
-      opacity: 0;
-    }
-    .hide5 {
-      opacity: 0;
-    }
-    .hide6 {
-      opacity: 0;
-    }
-    .hide7 {
-      opacity: 0;
-    }
-    .hide8 {
-      opacity: 0;
-    }
-    .hide9 {
-      opacity: 0;
+    .hide1 { opacity: 0; }
+    .hide2 { opacity: 0; }
+    .hide3 { opacity: 0; }
+    .hide4 { opacity: 0; }
+    .hide5 { opacity: 0; }
+    .hide6 { opacity: 0; }
+    .hide7 { opacity: 0; }
+    .hide8 { opacity: 0; }
+    .hide9 { opacity: 0; }
+    @media screen and (max-width: 768px) {
+      .hide4 { order: 1; }
+      .hide5 { order: 2; }
+      .hide6 { order: 4; }
+      .hide7 { order: 3; }
+      .hide8 { order: 5; }
+      .hide9 { order: 6; }
     }
     .shop_wrap {
       padding: 0 140px;
       text-align: center;
+      @media screen and (max-width: 768px) {
+        padding: 0;
+      }
       .shop_title1 {
         font-size: 10px;
         letter-spacing: 2px;
@@ -179,6 +173,7 @@ main {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 55vh 55vh 55vh;
       @media screen and (max-width: 768px) {
+        padding: 0;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: 55vh 55vh 55vh 55vh 55vh 55vh;
       }
@@ -234,6 +229,7 @@ main {
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: 45vh 45vh;
       @media screen and (max-width: 768px) {
+        padding: 0;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: 45vh 45vh 45vh 45vh 45vh 45vh 45vh 45vh;
       }
@@ -252,6 +248,9 @@ main {
       display: flex;
       justify-content: center;
       font-size: 30px;
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
       a {
         cursor: pointer;
         color: #9d9d9c;
@@ -270,6 +269,11 @@ footer {
   align-items: center;
   text-align: center;
   font-size: 11px;
+  @media screen and (max-width: 768px) {
+    grid-template-rows: 17vh;
+    padding: 40px 0;
+    font-size: 5px;
+  }
   .footer_column {
     width: 100%;
     height: 100%;
