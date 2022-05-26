@@ -114,15 +114,7 @@ main {
         }
       }
     }
-    .hide1 { opacity: 0; }
-    .hide2 { opacity: 0; }
-    .hide3 { opacity: 0; }
-    .hide4 { opacity: 0; }
-    .hide5 { opacity: 0; }
-    .hide6 { opacity: 0; }
-    .hide7 { opacity: 0; }
-    .hide8 { opacity: 0; }
-    .hide9 { opacity: 0; }
+    .hide1, .hide2, .hide3, .hide4, .hide5, .hide6, .hide7, .hide8, .hide9 { opacity: 0; }
     @media screen and (max-width: 768px) {
       .hide4 { order: 1; }
       .hide5 { order: 2; }
