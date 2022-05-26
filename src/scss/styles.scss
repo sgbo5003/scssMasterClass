@@ -25,7 +25,7 @@ header {
   display: flex;
   align-items: center;
   @media screen and (max-width: 768px) {
-    padding: 0 10px;
+    padding: 0 30px;
   }
   nav {
     width: 100%;
@@ -39,6 +39,9 @@ header {
       &:first-child {
         li {
           margin-right: 60px;
+          @media screen and (max-width: 768px) {
+            margin-right: 40px;
+          }
         }
       }
     }
@@ -48,6 +51,9 @@ header {
 main {
   width: 100%;
   padding-top: 120px;
+  @media screen and (max-width: 768px) {
+    padding-top: 66px;
+  }
   .wrapper {
     .description_wrap {
       display: grid;
