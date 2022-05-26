@@ -83,6 +83,18 @@ a {
 > 
 - [https://github.com/sgbo5003/scssMasterClass/commit/8a33816e0cc42eb8a663702b98a9c71ecc3fb525](https://github.com/sgbo5003/scssMasterClass/commit/8a33816e0cc42eb8a663702b98a9c71ecc3fb525) 참고
 
+### #4.1 Paint Box Coding ~ #4.2 Paint Box Comment
+
+> 따라할 페이지
+> 
+- [https://paint-box.com/](https://paint-box.com/) 를 참고하여 비슷하게 만들어보기
+
+> 코드
+> 
+- [https://github.com/sgbo5003/scssMasterClass/commit/420e90f3bf4406eab1b790142e8d80d29e48dd47](https://github.com/sgbo5003/scssMasterClass/commit/420e90f3bf4406eab1b790142e8d80d29e48dd47) 참고
+
+
+
 
 
 
